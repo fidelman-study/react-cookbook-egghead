@@ -11,7 +11,10 @@ export default (state = defaultState, action) => {
 
   switch (type) {
     case 'ADD_QUOTE_BY_ID':
-      return [...state, payload];
+      return [
+        ...state,
+        payload
+      ];
   }
 
   return state;
